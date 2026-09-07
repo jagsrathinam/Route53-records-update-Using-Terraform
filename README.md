@@ -59,7 +59,23 @@ cd deployments/app-team-alpha/prod
 2. Define Credentials & Module Call
    Create `main.tf` to reference the shared core module:
 
-3. 
-   
+3. Configure Environment `.tfvars`
+Create `terraform.tfvars` with team-specific identifiers:
 
+4. Execute Terraform Pipeline
+```text
+# Initialize and download module dependencies
+terraform init
 
+# Validate syntax and formatting
+terraform fmt -check
+terraform validate
+
+# Plan deployment
+terraform plan
+
+# Deploy DNS records
+terraform apply
+```
+**Cross-Account Deployment Pattern**
+If your team's Route 53 Hosted Zone exists in a dedicated core networking account or team-specific AWS account, configure `providers`.tf in your deployment root to assume a target role:
