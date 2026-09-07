@@ -64,7 +64,6 @@ Create `terraform.tfvars` with team-specific identifiers:
 
 4. Execute Terraform Pipeline
 ```text
-**Bash**
 # Initialize and download module dependencies
 terraform init
 
