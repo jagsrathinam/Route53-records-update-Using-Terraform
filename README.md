@@ -56,6 +56,5 @@ Create a dedicated directory under the `deployments/` folder for your team and t
 mkdir -p deployments/app-team-alpha/prod
 cd deployments/app-team-alpha/prod
 ```
----
 
 
