@@ -48,9 +48,8 @@ terraform-dns-management/
             └── terraform.tfvars
 ```
 ---
-## Deployment Guide for Teams
+### Deployment Guide for Teams
 ## 1. Directory Setup
-
 Create a dedicated directory under the `deployments/` folder for your team and target environment:
 
 ```text
@@ -58,9 +57,9 @@ mkdir -p deployments/app-team-alpha/prod
 cd deployments/app-team-alpha/prod
 ```
 ---
-### 2. Define Credentials & Module Call
-Create `main.tf` to reference the shared core module:
+## 2. Define Credentials & Module Call
+Create main.tf to reference the shared core module:
 ---
-### 3. Configure Environment .tfvars
+## 3. Configure Environment .tfvars
 Create `terraform.tfvars` with team-specific identifiers:
 
