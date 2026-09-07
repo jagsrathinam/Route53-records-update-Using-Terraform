@@ -49,6 +49,27 @@ terraform-dns-management/
             └── terraform.tfvars
 ```
 ---
+## Prerequisites
+* Terraform: `v1.3.0` or higher
+* AWS CLI: Configured with credentials possessing Route 53 record management permissions.
+* IAM Policy Required:
+  ```text
+  {
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "route53:ChangeResourceRecordSets",
+        "route53:ListResourceRecordSets",
+        "route53:GetHostedZone"
+      ],
+      "Resource": "arn:aws:route53:::hostedzone/*"
+    }
+  ]
+}
+```
+---
 ### Deployment Guide for Teams
 1. Directory Setup
 Create a dedicated directory under the `deployments/` folder for your team and target environment:
