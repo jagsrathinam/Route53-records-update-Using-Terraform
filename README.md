@@ -16,4 +16,7 @@ This repository decouples core DNS management logic into a reusable shared modul
 
 ---
 
-## Architecture Overview and flow
+## Architecture Overview
+
+![AWS Architecture](aws_architecture_diagram.png)
+---
