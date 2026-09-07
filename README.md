@@ -69,7 +69,6 @@ terraform-dns-management/
   ]
 }
 ```
----
 ### Deployment Guide for Teams
 1. Directory Setup
 Create a dedicated directory under the `deployments/` folder for your team and target environment:
