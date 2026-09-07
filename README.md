@@ -50,9 +50,9 @@ terraform-dns-management/
 ```
 ---
 ## Prerequisites
-    * Terraform: `v1.3.0` or higher
-    * AWS CLI: Configured with credentials possessing Route 53 record management permissions.
-    * IAM Policy Required:
+1. Terraform: `v1.3.0` or higher
+2. AWS CLI: Configured with credentials possessing Route 53 record management permissions.
+3. IAM Policy Required:
       ```text
       {
       "Version": "2012-10-17",
