@@ -56,10 +56,10 @@ Create a dedicated directory under the `deployments/` folder for your team and t
 ```bash
 mkdir -p deployments/app-team-alpha/prod
 cd deployments/app-team-alpha/prod ```
-
+---
 ### 2. Define Credentials & Module Call
 Create `main.tf` to reference the shared core module:
-
+---
 ### 3. Configure Environment .tfvars
 Create `terraform.tfvars` with team-specific identifiers:
 
