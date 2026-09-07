@@ -41,7 +41,7 @@ terraform-dns-management/
     │       ├── outputs.tf            # Root outputs
     │       └── terraform.tfvars      # Team Alpha environment values
     │
-    └── app-team-beta/                #Team Beta(Sample structure)
+    └── app-team-beta/                #Team Beta(Sample structure, NOT POPULATED)
         └── stage/
             ├── main.tf
             ├── providers.tf
