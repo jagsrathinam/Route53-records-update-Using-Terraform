@@ -1,4 +1,4 @@
-# Route53-records-update-Using-Terraform
+# Route53-records-update-using-Terraform
 A production-grade, multi-team Terraform architecture for managing AWS Route 53 DNS records across multiple domains, environments, and AWS accounts.
 This repository decouples core DNS management logic into a reusable shared module (`modules/route53-dns`) while allowing engineering teams to manage their independent DNS states in isolated deployment roots (`deployments/`).
 
