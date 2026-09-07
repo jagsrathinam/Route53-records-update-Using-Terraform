@@ -52,6 +52,6 @@ terraform-dns-management/
 1. **Directory Setup**
     Create a dedicated directory under `deployments/<team-name>/<environment>/`:
 
-`Bash`
-`mkdir -p deployments/app-team-alpha/prod
-`cd deployments/app-team-alpha/prod`
+`Bash
+mkdir -p deployments/app-team-alpha/prod
+cd deployments/app-team-alpha/prod`
