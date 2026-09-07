@@ -78,4 +78,4 @@ terraform plan
 terraform apply
 ```
 **Cross-Account Deployment Pattern**
-If your team's Route 53 Hosted Zone exists in a dedicated core networking account or team-specific AWS account, configure `providers`.tf in your deployment root to assume a target role:
+If your team's Route 53 Hosted Zone exists in a dedicated core networking account or team-specific AWS account, configure `providers.tf` in your deployment root to assume a target role:
