@@ -18,5 +18,5 @@ This repository decouples core DNS management logic into a reusable shared modul
 
 ## Architecture Overview
 
-![AWS Architecture](aws_architecture_diagram.png)
+![Route53-DNS-update](Route53-DNS-update.png)
 ---
