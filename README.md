@@ -20,3 +20,32 @@ This repository decouples core DNS management logic into a reusable shared modul
 
 ![Route53-DNS-update](Route53-DNS-update.png)
 ---
+## Repository Layout
+
+```text
+terraform-dns-management/
+├──Route53-DNS-update.png
+├── modules/
+│   └── route53-dns/                  # Core Reusable Module
+│       ├── main.tf                   # Route53 record resources (A, CNAME, TXT, MX, SRV, ALIAS)
+│       ├── locals.tf                 # Dynamic string formatting & flattening logic
+│       ├── variables.tf              # Strongly typed module inputs
+│       └── outputs.tf                # Generated FQDN outputs
+│
+└── deployments/                      # Team Deployment Environments
+    ├── app-team-alpha/
+    │   └── prod/
+    │       ├── main.tf               # Module instantiation
+    │       ├── providers.tf          # Provider setup & cross-account IAM role assume
+    │       ├── variables.tf          # Root configuration inputs
+    │       ├── outputs.tf            # Root outputs
+    │       └── terraform.tfvars      # Team Alpha environment values
+    └── app-team-beta/
+        └── stage/
+            ├── main.tf
+            ├── providers.tf
+            ├── variables.tf
+            └── terraform.tfvars
+```
+
+---
